@@ -34,5 +34,7 @@ public partial class RunStateMachine : Node
         Instance.AddChild(instance);
         Instance.currentState = instance;
         instance.EnterState(parameter);
+
+        GD.Print($"Going to state: {gameStateEnum}");
     }
 }
