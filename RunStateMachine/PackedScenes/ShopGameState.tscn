@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://1eplq21n02ha"]
+
+[ext_resource type="Script" uid="uid://ibk07hkjyex1" path="res://RunStateMachine/Scripts/RunStates/ShopGameState.cs" id="1_vqfm6"]
+
+[node name="Shop" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_vqfm6")

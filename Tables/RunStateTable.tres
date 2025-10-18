@@ -1,7 +1,23 @@
-[gd_resource type="Resource" script_class="RunStateTable" load_steps=2 format=3 uid="uid://gxu2jppl0gr3"]
+[gd_resource type="Resource" script_class="RunStateTable" load_steps=8 format=3 uid="uid://gxu2jppl0gr3"]
 
+[ext_resource type="Script" uid="uid://bipyp7611aifw" path="res://GameStateMachine/Scripts/GameStateTemplate.cs" id="1_fmybk"]
 [ext_resource type="Script" uid="uid://d3g5unq8un631" path="res://RunStateMachine/Scripts/RunStateTable.cs" id="1_kwck0"]
+[ext_resource type="PackedScene" uid="uid://dmudkfg2811a3" path="res://RunStateMachine/PackedScenes/MapGameState.tscn" id="2_12pel"]
+[ext_resource type="PackedScene" uid="uid://dp56p45wxwbly" path="res://RunStateMachine/PackedScenes/CombatGameState.tscn" id="3_252lx"]
+[ext_resource type="PackedScene" uid="uid://da8h0626cak0c" path="res://RunStateMachine/PackedScenes/EventGameState.tscn" id="4_kthd1"]
+[ext_resource type="PackedScene" uid="uid://1eplq21n02ha" path="res://RunStateMachine/PackedScenes/ShopGameState.tscn" id="5_cn2hd"]
+[ext_resource type="PackedScene" uid="uid://cno5yv0b1fya1" path="res://RunStateMachine/PackedScenes/RewardsGameState.tscn" id="6_jfs6u"]
 
 [resource]
 script = ExtResource("1_kwck0")
+scenes = Dictionary[int, PackedScene]({
+0: ExtResource("2_12pel"),
+1: ExtResource("3_252lx"),
+2: ExtResource("4_kthd1"),
+3: ExtResource("5_cn2hd"),
+4: ExtResource("6_jfs6u")
+})
+packedScenePath = "res://RunStateMachine/PackedScenes"
+scriptPath = "res://RunStateMachine/Scripts/RunStates"
+gameStateInstanceTemplate = ExtResource("1_fmybk")
 metadata/_custom_type_script = "uid://d3g5unq8un631"

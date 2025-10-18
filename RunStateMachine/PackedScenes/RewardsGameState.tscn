@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cno5yv0b1fya1"]
+
+[ext_resource type="Script" uid="uid://tco8pyk6ho84" path="res://RunStateMachine/Scripts/RunStates/RewardsGameState.cs" id="1_uknrp"]
+
+[node name="Rewards" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_uknrp")
