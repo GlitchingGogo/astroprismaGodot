@@ -4,6 +4,7 @@ using System;
 
 public partial class RunInstance : Node
 {
+    public static RunInstance Instance;
     [Export] public string characterName;
     [Export] public UnitID unit = UnitID.None;
     [Export] public int currentHealth;
@@ -24,8 +25,12 @@ public partial class RunInstance : Node
 
     public RunInstance(UnitID unit)
     {
+        Instance = this;
+        Name = "RunInstance";
         this.unit = unit;
         UnitResource resource = Tables.Units.resources[unit];
+        currentHealth = resource.maxHealth;
+        maxHealth = resource.maxHealth;
         vigor = resource.vigor;
         grace = resource.grace;
         mind = resource.mind;

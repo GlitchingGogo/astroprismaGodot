@@ -2,6 +2,7 @@ public enum UnitID
 {
     None = -1,
     Test,
+    TestEnemy,
 
     //Origins Go Here
     Ecoterrorist,

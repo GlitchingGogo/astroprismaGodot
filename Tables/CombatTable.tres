@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CombatTable" load_steps=3 format=3 uid="uid://cp8bblmhopnj2"]
+
+[ext_resource type="Resource" uid="uid://btwlynrgrsefo" path="res://Combat/Resources/TestCombat.tres" id="1_0ytgt"]
+[ext_resource type="Script" uid="uid://dexfb8ebq3sxc" path="res://Combat/Scripts/CombatTable.cs" id="1_a42gh"]
+
+[resource]
+script = ExtResource("1_a42gh")
+resources = Array[Object]([ExtResource("1_0ytgt")])
+resourcePath = "res://Combat/Resources"
+metadata/_custom_type_script = "uid://dexfb8ebq3sxc"

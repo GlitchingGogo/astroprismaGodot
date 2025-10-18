@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UnitResource" load_steps=2 format=3 uid="uid://slri5nmym3mm"]
+
+[ext_resource type="Script" uid="uid://d0ona00v3rprt" path="res://Units/Scripts/UnitResource.cs" id="1_6vv81"]
+
+[resource]
+script = ExtResource("1_6vv81")
+name = "TestEnemy"
+maxHealth = 10
+rollActions = Dictionary[Vector2i, int]({
+Vector2i(1, 10): 0
+})

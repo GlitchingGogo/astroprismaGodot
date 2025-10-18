@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="UnitTable" load_steps=9 format=3 uid="uid://dtdxxg0ugx8pq"]
+[gd_resource type="Resource" script_class="UnitTable" load_steps=10 format=3 uid="uid://dtdxxg0ugx8pq"]
 
 [ext_resource type="Resource" uid="uid://cdabbb8kpj6sw" path="res://Units/Resources/Test.tres" id="1_8itp3"]
 [ext_resource type="Script" uid="uid://br1hvu2ao6jnr" path="res://Units/Scripts/UnitTable.cs" id="1_e0wro"]
+[ext_resource type="Resource" uid="uid://slri5nmym3mm" path="res://Units/Resources/TestEnemy.tres" id="2_gohjt"]
 [ext_resource type="Resource" uid="uid://cybs1urf5g03f" path="res://Units/Resources/Ecoterrorist.tres" id="2_sjc8p"]
 [ext_resource type="Resource" uid="uid://6ckmpgyjnjqf" path="res://Units/Resources/Astromancer.tres" id="3_gohjt"]
 [ext_resource type="Resource" uid="uid://buqy2x08u0p6d" path="res://Units/Resources/Glitchblade.tres" id="4_o30io"]
@@ -13,12 +14,13 @@
 script = ExtResource("1_e0wro")
 resources = Dictionary[int, Object]({
 0: ExtResource("1_8itp3"),
-1: ExtResource("2_sjc8p"),
-2: ExtResource("3_gohjt"),
-3: ExtResource("4_o30io"),
-4: ExtResource("5_38bkd"),
-5: ExtResource("6_33bql"),
-6: ExtResource("7_l4qob")
+1: ExtResource("2_gohjt"),
+2: ExtResource("2_sjc8p"),
+3: ExtResource("3_gohjt"),
+4: ExtResource("4_o30io"),
+5: ExtResource("5_38bkd"),
+6: ExtResource("6_33bql"),
+7: ExtResource("7_l4qob")
 })
 resourcePath = "res://Units/Resources"
 metadata/_custom_type_script = "uid://br1hvu2ao6jnr"

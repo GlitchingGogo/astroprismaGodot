@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_dsplw")
-name = "Test"
+name = "Test Player Name"
+maxHealth = 20

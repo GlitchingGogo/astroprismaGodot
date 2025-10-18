@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dp56p45wxwbly"]
+[gd_scene load_steps=4 format=3 uid="uid://dp56p45wxwbly"]
 
 [ext_resource type="Script" uid="uid://c2s7l3250sgbl" path="res://RunStateMachine/Scripts/RunStates/CombatGameState.cs" id="1_khdti"]
+[ext_resource type="PackedScene" uid="uid://b7m7tcppp2fh5" path="res://Combat/PackedScenes/UnitDisplay.tscn" id="2_6l1j0"]
+[ext_resource type="Script" uid="uid://cp50kr444rgpb" path="res://Combat/Scripts/CombatLog.cs" id="3_fkbvn"]
 
-[node name="Combat" type="Control"]
+[node name="Combat" type="Control" node_paths=PackedStringArray("enemyDisplayContainer", "allyDisplayContainer", "rewardsButton", "debugDamageButton")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,6 +12,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_khdti")
+unitDisplayPrefab = ExtResource("2_6l1j0")
+enemyDisplayContainer = NodePath("PanelContainer/HBoxContainer/Main/Enemies")
+allyDisplayContainer = NodePath("PanelContainer/HBoxContainer/Main/Allies")
+rewardsButton = NodePath("PanelContainer/VBoxContainer/Button")
+debugDamageButton = NodePath("PanelContainer/HBoxContainer/Main/ActionContainer/Button")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -20,6 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -31,3 +39,33 @@ text = "Combat"
 [node name="Button" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "Rewards"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Main" type="VBoxContainer" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Enemies" type="HBoxContainer" parent="PanelContainer/HBoxContainer/Main"]
+layout_mode = 2
+
+[node name="Allies" type="HBoxContainer" parent="PanelContainer/HBoxContainer/Main"]
+layout_mode = 2
+
+[node name="ActionContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/Main"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/Main/ActionContainer"]
+layout_mode = 2
+text = "Debug Damage"
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+
+[node name="CombatLog" type="RichTextLabel" parent="PanelContainer/HBoxContainer/PanelContainer"]
+layout_mode = 2
+bbcode_enabled = true
+script = ExtResource("3_fkbvn")

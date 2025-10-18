@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7m7tcppp2fh5"]
+
+[ext_resource type="Script" uid="uid://kw16tcvjxxcc" path="res://Combat/Scripts/UnitDisplay.cs" id="1_iso66"]
+
+[node name="UnitDisplay" type="MarginContainer" node_paths=PackedStringArray("nameLabel", "healthProgressBar", "healthLabel")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.0
+offset_top = -29.5
+offset_right = 43.0
+offset_bottom = 29.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_iso66")
+nameLabel = NodePath("VBoxContainer/Label")
+healthProgressBar = NodePath("VBoxContainer/ProgressBar")
+healthLabel = NodePath("VBoxContainer/ProgressBar/Label")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "UNITNAME"
+
+[node name="ProgressBar" type="ProgressBar" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+show_percentage = false
+
+[node name="Label" type="Label" parent="VBoxContainer/ProgressBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "###/###"
+horizontal_alignment = 1
+vertical_alignment = 1

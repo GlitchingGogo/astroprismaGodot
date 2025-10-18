@@ -1,6 +1,9 @@
 using Godot;
 using System;
 
-public partial class WeaponResource : Node
+[GlobalClass]
+[Tool]
+public partial class WeaponResource : Resource
 {
+    [Export] public ActionID actionID;
 }
