@@ -3,9 +3,11 @@ using System;
 
 public partial class CombatGameState : GameState
 {
+    [Export] Button rewardsButton;
+
     public override void EnterState(object parameter = null)
     {
-        //TODO
+        rewardsButton.Pressed += () => RunStateMachine.GoToState(RunStateType.Rewards);
     }
 
     public override void ExitState()
