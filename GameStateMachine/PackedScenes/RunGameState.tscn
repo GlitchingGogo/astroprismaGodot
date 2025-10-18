@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2i7nht626s25"]
+
+[ext_resource type="Script" uid="uid://bo7ks24y8ljii" path="res://GameStateMachine/Scripts/GameStates/RunGameState.cs" id="1_8wc63"]
+[ext_resource type="Script" uid="uid://br2tmxhg3ep3w" path="res://RunStateMachine/Scripts/RunStateMachine.cs" id="2_atvr5"]
+
+[node name="Run" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8wc63")
+
+[node name="RunStateMachine" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_atvr5")
+initialStateEnum = 0

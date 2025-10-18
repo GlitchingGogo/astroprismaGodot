@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="GameStateTable" load_steps=7 format=3 uid="uid://b3ub2l188oet1"]
+
+[ext_resource type="Script" uid="uid://bipyp7611aifw" path="res://GameStateMachine/Scripts/GameStateTemplate.cs" id="1_7o2a6"]
+[ext_resource type="Script" uid="uid://7h1pgockjlko" path="res://GameStateMachine/Scripts/GameStateTable.cs" id="1_i8dm7"]
+[ext_resource type="PackedScene" uid="uid://cy7qeaduxe8y7" path="res://GameStateMachine/PackedScenes/MainMenuGameState.tscn" id="2_ngvt7"]
+[ext_resource type="PackedScene" uid="uid://b4mfoicculopr" path="res://GameStateMachine/PackedScenes/PreRunGameState.tscn" id="3_i8ctv"]
+[ext_resource type="PackedScene" uid="uid://d2i7nht626s25" path="res://GameStateMachine/PackedScenes/RunGameState.tscn" id="4_420ag"]
+[ext_resource type="PackedScene" uid="uid://dpjo05jl0sqy4" path="res://GameStateMachine/PackedScenes/RunEndGameState.tscn" id="5_63fqx"]
+
+[resource]
+script = ExtResource("1_i8dm7")
+scenes = Dictionary[int, PackedScene]({
+0: ExtResource("2_ngvt7"),
+1: ExtResource("3_i8ctv"),
+2: ExtResource("4_420ag"),
+3: ExtResource("5_63fqx")
+})
+packedScenePath = "res://GameStateMachine/PackedScenes"
+scriptPath = "res://GameStateMachine/Scripts/GameStates"
+gameStateInstanceTemplate = ExtResource("1_7o2a6")
+metadata/_custom_type_script = "uid://7h1pgockjlko"
