@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="UnitResource" load_steps=2 format=3 uid="uid://cciyqc8o2kjkn"]
+
+[ext_resource type="Script" uid="uid://d0ona00v3rprt" path="res://Units/Scripts/UnitResource.cs" id="1_f7my2"]
+
+[resource]
+script = ExtResource("1_f7my2")
+name = "Wirehead"

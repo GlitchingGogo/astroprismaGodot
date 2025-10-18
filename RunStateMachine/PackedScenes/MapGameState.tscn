@@ -4,7 +4,11 @@
 
 [node name="Map" type="Control" node_paths=PackedStringArray("combatButton", "shopButton", "eventButton")]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_f8w44")
 combatButton = NodePath("PanelContainer/VBoxContainer/Button")
 shopButton = NodePath("PanelContainer/VBoxContainer/Button2")
@@ -15,8 +19,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1152.0
-offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 2
 

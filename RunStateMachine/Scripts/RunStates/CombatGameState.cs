@@ -10,6 +10,11 @@ public partial class CombatGameState : GameState
         rewardsButton.Pressed += () => RunStateMachine.GoToState(RunStateType.Rewards);
     }
 
+    void CreateCombatInstance()
+    {
+        
+    }
+
     public override void ExitState()
     {
         //TODO

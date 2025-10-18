@@ -3,9 +3,11 @@ using System;
 
 public partial class RunGameState : GameState
 {
+    public static RunInstance Run;    
+
     public override void EnterState(object parameter = null)
     {
-        //TODO
+        Run = new RunInstance(UnitID.Test);
     }
 
     public override void ExitState()

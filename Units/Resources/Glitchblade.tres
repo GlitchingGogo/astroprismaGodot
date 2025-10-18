@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="UnitResource" load_steps=2 format=3 uid="uid://buqy2x08u0p6d"]
+
+[ext_resource type="Script" uid="uid://d0ona00v3rprt" path="res://Units/Scripts/UnitResource.cs" id="1_qf8dr"]
+
+[resource]
+script = ExtResource("1_qf8dr")
+name = "Glitchblade"
