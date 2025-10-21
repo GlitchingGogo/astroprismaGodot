@@ -5,6 +5,8 @@ public enum ItemID
     // Currencies
     Serum,
     Scraps,
+
+    // Sea of Neon Expansion Currency
     VYen,
 
     // Equipment
@@ -22,6 +24,7 @@ public enum ItemID
     HeatBomb,
     TaserShell,
     FlashRound,
+    // Core Book Narcobiotics
     StratogenHormones,
     VesteroneStimulant,
     TestogreHormones,
